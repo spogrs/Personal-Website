@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Benjamin Holton - Programming Student</title>
+	<title>Benjamin Holton Programming Student</title>
 	<style>
 		*{box-sizing:border-box}
 		body{font-family: Arial, Helvetica, sans-serif;max-width:1000px;margin:0 auto;padding:0 16px;color:#e0e0e0;background:#1e1e1e}
@@ -11,9 +11,10 @@
 		.nav-links{display:flex;flex-wrap:wrap;gap:16px}
 		nav a{color:#e0e0e0;text-decoration:none;font-weight:500;white-space:nowrap}
 		nav a:hover{color:#0b79ff}
+		nav a.current{color:#0b79ff;font-weight:700;border-bottom:2px solid #0b79ff;padding-bottom:2px}
 		.nav-contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 		.nav-contact a{color:#e0e0e0;text-decoration:none}
-		header{display:flex;justify-content:flex-start;align-items:flex-start;padding:48px 0;text-align:left;flex-direction:column}
+		header{display:flex;justify-content:flex-start;align-items:flex-start;padding:0;text-align:left;flex-direction:column}
 		h1{margin:0;font-size:48px;margin-bottom:8px}
 		.subtitle{font-size:24px;color:#a0a0a0;margin-bottom:24px}
 		.cta-buttons{display:flex;flex-wrap:wrap;gap:16px;justify-content:flex-start;margin-top:24px}
@@ -33,10 +34,9 @@
 <body>
 	<nav>
 		<div class="nav-links">
-			<a href="index.html">Home</a>
+			<a href="index.html" class="current">Home</a>
 			<a href="Portfolio.html">Portfolio</a>
 			<a href="About.html">About</a>
-			<a href="CV.html">CV</a>
 			<a href="Contact.html">Contact</a>
 		</div>
 		<div class="nav-contact">
@@ -52,7 +52,7 @@
 	<header>
 		<h1>Benjamin Holton</h1>
 		<p class="subtitle">Programming Student</p>
-		<p style="color:#a0a0a0;max-width:500px;">Building web applications with <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">C#</span>, and a passion for accessible design.</p>
+		<p style="color:#a0a0a0;max-width:500px;">Building applications with <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">C#</span></p>
 		<div class="cta-buttons">
 			<a href="Portfolio.html" class="cta-button">View My Work</a>
 			<a href="Contact.html" class="cta-button" style="background:#333;color:#e0e0e0;border:1px solid #444">Get In Touch</a>
@@ -61,10 +61,10 @@
 
 	<section>
 		<div class="section-title">Welcome</div>
-		<p>I'm a programming student focused on creating engaging and accessible digital experiences. I enjoy working on web projects that challenge me to learn new technologies and improve my skills.</p>
+		<p>I'm a programming student focused on creating engaging and accessible digital experiences. I enjoy working on projects that challenge me to learn new technologies and improve my skills.</p>
 		<p>Explore my portfolio to see what I've been working on, or feel free to get in touch if you'd like to collaborate or discuss opportunities.</p>
 	</section>
 
-	<footer>Available for remote or on-site roles. References upon request.</footer>
+	<footer>Available for on-site roles.</footer>
 </body>
 </html>
