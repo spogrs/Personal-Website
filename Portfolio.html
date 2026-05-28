@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>CV</title>
+	<title>Portfolio</title>
 	<style>
 		*{box-sizing:border-box}
 		body{font-family: Arial, Helvetica, sans-serif;max-width:1000px;margin:0 auto;padding:0 16px;color:#e0e0e0;background:#1e1e1e}
@@ -13,21 +13,26 @@
 		nav a:hover{color:#0b79ff}
 		.nav-contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 		.nav-contact a{color:#e0e0e0;text-decoration:none}
-		header{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;gap:16px;padding:0}
+		header{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;padding:0;text-align:left}
 		h1{margin:0;font-size:28px}
-		.contact{font-size:14px;color:#a0a0a0;text-align:right;align-self:flex-start}
-		.contact div{margin:4px 0}
 		section{margin-top:18px;padding:0}
 		.section-title{font-weight:700;border-bottom:2px solid #444;padding-bottom:6px;margin-bottom:8px}
 		.muted{color:#888;font-size:14px}
-		ul{margin:6px 0 0 18px}
-		.skills span{display:inline-block;background:#333;padding:6px 8px;border-radius:4px;margin:4px 6px 0 0;font-size:13px}
+		.projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-top:16px}
+		.project{background:#2a2a2a;padding:20px;border-radius:6px;display:flex;flex-direction:column;aspect-ratio:1;justify-content:space-between}
+		.project:hover{background:#333;transition:background 0.3s}
+		.project h3{margin:0 0 12px 0;color:#e0e0e0;font-size:18px}
+		.project p{margin:0;color:#a0a0a0;font-size:14px;flex-grow:1}
+		.project-link{color:#0b79ff;text-decoration:none;margin-top:12px;display:inline-block}
+		.project-link:hover{text-decoration:underline}
 		footer{margin-top:22px;font-size:13px;color:#666;padding:0}
+		@media (max-width:520px){
+			.project{aspect-ratio:auto}
+		}
 		@media (max-width:720px){
 			nav{padding:14px 0;align-items:flex-start}
 			header{flex-direction:column;align-items:flex-start}
-			section,footer{padding:0}
-			.skills span{font-size:12px}
+			.section-title{font-size:18px}
 		}
 	</style>
 </head>
@@ -49,33 +54,44 @@
 			</a>
 		</div>
 	</nav>
+
 	<header>
 		<div>
-			<h1>Benjamin Holton</h1>
-			<div class="muted">Programmering elev</div>
-		</div>
-		<div class="contact">
-			<div class="phone">Tel: 26919780</div>
+			<h1>Portfolio</h1>
 		</div>
 	</header>
 
 	<section>
-		<div class="section-title">Profil</div>
-		<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	</section>
+		<div class="section-title">My Projects</div>
+		<p>Here are some of the projects I've been working on:</p>
 
-	<section>
-		<div class="section-title">Erfaring</div>
-<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	</section>
+		<div class="projects-grid">
+			<div class="project">
+				<div>
+					<h3>Project 1</h3>
+					<p>Description of your first project. Add technologies used, what you learned, and a link to the project.</p>
+				</div>
+				<p><a href="#" class="project-link">View Project →</a></p>
+			</div>
 
-	<section>
-		<div class="section-title">Skills</div>
-		<div class="skills">
-			<span>C#</span><span>HTML</span><span>CSS</span><span>Accessibility</span>
+			<div class="project">
+				<div>
+					<h3>Project 2</h3>
+					<p>Description of your second project. Highlight the challenges you overcame and the skills you applied.</p>
+				</div>
+				<p><a href="#" class="project-link">View Project →</a></p>
+			</div>
+
+			<div class="project">
+				<div>
+					<h3>Project 3</h3>
+					<p>Description of your third project. Share what makes this project special and what technologies were involved.</p>
+				</div>
+				<p><a href="#" class="project-link">View Project →</a></p>
+			</div>
 		</div>
 	</section>
 
-	<footer style="margin-top:22px;font-size:13px;color:#666">Available for remote or on-site roles. References upon request.</footer>
+	<footer>Available for remote or on-site roles. References upon request.</footer>
 </body>
 </html>

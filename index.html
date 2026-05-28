@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>CV</title>
+	<title>Benjamin Holton - Programming Student</title>
 	<style>
 		*{box-sizing:border-box}
 		body{font-family: Arial, Helvetica, sans-serif;max-width:1000px;margin:0 auto;padding:0 16px;color:#e0e0e0;background:#1e1e1e}
@@ -13,21 +13,20 @@
 		nav a:hover{color:#0b79ff}
 		.nav-contact{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 		.nav-contact a{color:#e0e0e0;text-decoration:none}
-		header{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;gap:16px;padding:0}
-		h1{margin:0;font-size:28px}
-		.contact{font-size:14px;color:#a0a0a0;text-align:right;align-self:flex-start}
-		.contact div{margin:4px 0}
-		section{margin-top:18px;padding:0}
-		.section-title{font-weight:700;border-bottom:2px solid #444;padding-bottom:6px;margin-bottom:8px}
+		header{display:flex;justify-content:flex-start;align-items:flex-start;padding:48px 0;text-align:left;flex-direction:column}
+		h1{margin:0;font-size:48px;margin-bottom:8px}
+		.subtitle{font-size:24px;color:#a0a0a0;margin-bottom:24px}
+		.cta-buttons{display:flex;flex-wrap:wrap;gap:16px;justify-content:flex-start;margin-top:24px}
+		.cta-button{display:inline-block;padding:12px 24px;background:#0b79ff;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;transition:background 0.3s}
+		.cta-button:hover{background:#0a5fcf}
+		section{margin-top:32px;padding:0}
+		.section-title{font-weight:700;border-bottom:2px solid #444;padding-bottom:6px;margin-bottom:16px;font-size:20px}
 		.muted{color:#888;font-size:14px}
-		ul{margin:6px 0 0 18px}
-		.skills span{display:inline-block;background:#333;padding:6px 8px;border-radius:4px;margin:4px 6px 0 0;font-size:13px}
-		footer{margin-top:22px;font-size:13px;color:#666;padding:0}
+		.highlight{color:#0b79ff}
+		footer{margin-top:32px;font-size:13px;color:#666;padding:0;text-align:center;padding-bottom:24px}
 		@media (max-width:720px){
 			nav{padding:14px 0;align-items:flex-start}
-			header{flex-direction:column;align-items:flex-start}
-			section,footer{padding:0}
-			.skills span{font-size:12px}
+			.cta-buttons{flex-direction:column;align-items:flex-start}
 		}
 	</style>
 </head>
@@ -49,33 +48,23 @@
 			</a>
 		</div>
 	</nav>
+
 	<header>
-		<div>
-			<h1>Benjamin Holton</h1>
-			<div class="muted">Programmering elev</div>
-		</div>
-		<div class="contact">
-			<div class="phone">Tel: 26919780</div>
+		<h1>Benjamin Holton</h1>
+		<p class="subtitle">Programming Student</p>
+		<p style="color:#a0a0a0;max-width:500px;">Building web applications with <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">C#</span>, and a passion for accessible design.</p>
+		<div class="cta-buttons">
+			<a href="Portfolio.html" class="cta-button">View My Work</a>
+			<a href="Contact.html" class="cta-button" style="background:#333;color:#e0e0e0;border:1px solid #444">Get In Touch</a>
 		</div>
 	</header>
 
 	<section>
-		<div class="section-title">Profil</div>
-		<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		<div class="section-title">Welcome</div>
+		<p>I'm a programming student focused on creating engaging and accessible digital experiences. I enjoy working on web projects that challenge me to learn new technologies and improve my skills.</p>
+		<p>Explore my portfolio to see what I've been working on, or feel free to get in touch if you'd like to collaborate or discuss opportunities.</p>
 	</section>
 
-	<section>
-		<div class="section-title">Erfaring</div>
-<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-	</section>
-
-	<section>
-		<div class="section-title">Skills</div>
-		<div class="skills">
-			<span>C#</span><span>HTML</span><span>CSS</span><span>Accessibility</span>
-		</div>
-	</section>
-
-	<footer style="margin-top:22px;font-size:13px;color:#666">Available for remote or on-site roles. References upon request.</footer>
+	<footer>Available for remote or on-site roles. References upon request.</footer>
 </body>
 </html>
