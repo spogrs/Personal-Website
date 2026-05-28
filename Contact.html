@@ -73,7 +73,8 @@
 			<input type="text" name="_honey" style="display:none">
 			<!-- disable captcha -->
 			<input type="hidden" name="_captcha" value="false">
-          
+            <!-- redirect-->
+            <input type="hidden" name="_next" value="https://example.com/thank-you.html">
 
 			<label for="name">Name</label>
 			<input id="name" name="name" type="text" required>
@@ -94,8 +95,7 @@
 
 			<button type="submit">Send Message</button>
 		</form>
-
-        </form>
+    </main>
 
 <!-- Popup -->
 <div id="popup" class="popup">
@@ -115,7 +115,7 @@ const popup = document.getElementById("popup");
 const closePopup = document.getElementById("closePopup");
 
 form.addEventListener("submit", function(e) {
-    e.preventDefault(); // stop redirect
+    e.preventDefault();
 
     fetch(form.action, {
         method: "POST",
@@ -127,6 +127,7 @@ form.addEventListener("submit", function(e) {
 
 closePopup.addEventListener("click", () => {
     popup.style.display = "none";
+    form.reset();
 });
 </script>
 	</main>
