@@ -100,9 +100,9 @@
 
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 240px));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             justify-content: start;
-            justify-items: start;
+            justify-items: stretch;
             gap: 16px;
             margin-top: 16px
         }
@@ -114,9 +114,10 @@
             display: flex;
             flex-direction: column;
             aspect-ratio: 1;
-            justify-content: space-between;
+            justify-content: flex-start;
             width: 100%;
-            max-width: 240px
+            max-width: 240px;
+            align-items: flex-start;
         }
 
         .project:hover {
@@ -130,11 +131,22 @@
             font-size: 18px
         }
 
-        .project p {
+        .project>div {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .project>div p {
             margin: 0;
             color: #a0a0a0;
             font-size: 14px;
-            flex-grow: 1
+            flex-grow: 1;
+        }
+
+        .project-link-wrapper {
+            margin-top: auto;
+            align-self: flex-start;
         }
 
         .project-link {
@@ -221,25 +233,39 @@
                     <h3>Personal Website</h3>
                     <p>A website showcasing my portfolio and skills. <br><br> Built with HTML, CSS, and JavaScript.</p>
                 </div>
-                <p><a href="https://github.com/spogrs/HTML-Portfolio/" class="project-link">View Project →</a></p>
+                <p class="project-link-wrapper"><a href="https://github.com/spogrs/HTML-Portfolio/"
+                        class="project-link">View Project →</a></p>
             </div>
-            <!--
-			<div class="project">
-				<div>
-					<h3>Project 2</h3>
-					<p>Description of your second project. Highlight the challenges you overcame and the skills you applied.</p>
-				</div>
-				<p><a href="#" class="project-link">View Project →</a></p>
-			</div>
-            
 
-			<div class="project">
-				<div>
-					<h3>Project 3</h3>
-					<p>Description of your third project. Share what makes this project special and what technologies were involved.</p>
-				</div>
-				<p><a href="#" class="project-link">View Project →</a></p>
-			</div>
+            <div class="project">
+                <div>
+                    <h3>WinForms SQL</h3>
+                    <p>A practice project designed to learn WinForms and basic SQL implementation using Microsoft SQL
+                        Server.<br><br>Built with WinForms, C#, and Microsoft SQL Server.</p>
+                </div>
+                <p class="project-link-wrapper"><a href="https://github.com/spogrs/SuperheroesManagment-SQL"
+                        class="project-link">View Project →</a>
+                </p>
+            </div>
+
+
+            <div class="project">
+                <div>
+                    <h3>Pokemon battle sim</h3>
+                    <p>A simple implementation of PokeAPI for a battle simulation project.<br><br>Built with HTML, CSS,
+                        JavaScript, and the PokeAPI.</p>
+                </div>
+                <p class="project-link-wrapper"><a href="https://github.com/spogrs/PokeAPI-battle-sim"
+                        class="project-link">View Project →</a></p>
+            </div>
+            <!-- FOR FUTURE EXPANSION (make modular in future)
+            <div class="project">
+                <div>
+                    <h3>PLorem ipsum</h3>
+                    <p>Loreumipsum<br><br>Built with Loreum ipsum</p>
+                </div>
+                <p class="project-link-wrapper"><a href="" class="project-link">View Project →</a></p>
+            </div>
             -->
         </div>
     </section>
